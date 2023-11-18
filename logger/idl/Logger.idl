@@ -1,0 +1,18 @@
+//
+// Interface Logger
+//
+//   Arquitetura de Sistemas Distribuídos, Paralelos e Concorrentes
+//   Escola Politécnica - PUCPR
+//   Tasi Guilhen Pasin
+//	 Mateus Ferro Antunes de Oliveira
+
+interface Logger {
+
+    // atributo para controle de verbosidade
+    attribute boolean verbose;
+
+    // operações para registrar um log
+    void log(in string severidade, in string endereco, in unsigned short pid, in unsigned long hora, in string msg);
+    
+    oneway void shutdown();
+};

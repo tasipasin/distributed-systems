@@ -1,0 +1,5 @@
+gerar skeleton
+tao_idl -Gstl nomedoarquivo.idl
+
+merge
+iormerger -f file1 file2 -o fileSaida
